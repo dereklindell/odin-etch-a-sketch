@@ -1,0 +1,15 @@
+#divcontainer {
+    display:grid;
+    grid-template-columns:repeat(16, 23px);
+    grid-template-rows:repeat(16, 23px);
+    justify-content: center;
+
+}
+
+.canvassquare {
+    width:20px;
+    height:20px;
+    background: rgb(235, 235, 235);
+    border: solid rgb(41, 41, 41) 1px;
+    border-radius: 2px;
+}
