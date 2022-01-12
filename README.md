@@ -1,3 +1,5 @@
 # odin-etch-a-sketch
 
-This project will be a demonstration of DOM manipulation, I hope to get it done by the end of the month (January 2022). 
+This project is a demonstration of DOM manipulation. 
+
+This project showcases my ability to create  and edit html elements using javascript and the DOM.
