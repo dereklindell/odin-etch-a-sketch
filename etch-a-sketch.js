@@ -1,13 +1,13 @@
-let divContainer = document.getElementById('divcontainer');
+const divContainer = document.getElementById('divcontainer');
 
 function setGrid() {
-    let gridNumber = prompt("How big do you want your grid?", "Max 100");
+    let gridNumber = prompt("How big do you want your grid? (Max 100)", "64");
     
     if (gridNumber <= 100) {
         let gridSize = gridNumber * gridNumber - 1;
 
-        divContainer.setAttribute('style', `grid-template-columns:repeat(${gridNumber}, 23px);
-        grid-template-rows:repeat(${gridNumber}, 23px);`)
+        divContainer.setAttribute('style', `grid-template-columns:repeat(${gridNumber}, 1fr);
+        grid-template-rows:repeat(${gridNumber}, 1fr);`)
         
         for (let i = 0; i <= gridSize; i++) {
             addDiv();
@@ -20,10 +20,11 @@ function setGrid() {
 function addDiv() {
     const newDiv = document.createElement("div");
     newDiv.classList.add("canvassquare")
-    newDiv.addEventListener('mouseenter', () => newDiv.setAttribute('style', 'background-color: rgb(96, 95, 110);'))
-
+    //Adds in event listener for 
+    newDiv.addEventListener('mouseenter', () => newDiv.setAttribute('style', `filter:brightness(.2)`))
     divContainer.appendChild(newDiv);
 
 }
 
 setGrid();
+

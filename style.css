@@ -1,15 +1,26 @@
+body {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+main {
+    display:flex;
+    justify-content: center;
+}
 #divcontainer {
     display:grid;
-    grid-template-columns:repeat(16, 23px);
-    grid-template-rows:repeat(16, 23px);
+    width:700px;
+    height:700px;
+    grid-template-columns:repeat(16, 1fr);
+    grid-template-rows:repeat(16, 1fr);
     justify-content: center;
-
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .canvassquare {
-    width:20px;
-    height:20px;
-    background: rgb(235, 235, 235);
-    border: solid rgb(41, 41, 41) 1px;
-    border-radius: 2px;
+    background-color: rgb(235, 235, 235);
+    border: .1px solid rgba(36, 36, 36, 0.342);
+    filter: brightness(1)
 }
